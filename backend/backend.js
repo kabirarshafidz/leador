@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 // Create an OpenAI connection
 const secretkey = process.env.OPENAI_API_KEY;
 const openai = new OpenAI({
-  apiKey: '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',
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
 // Endpoint to handle user questions
